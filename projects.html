@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Aditya N.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <nav class="navbar">...</nav>
+
+    <section class="projects-hero">
+        <div class="circuit-bg"></div>
+        <h1>Projects</h1>
+        <p>From concept to deployment – a showcase of my work</p>
+    </section>
+
+    <section class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card detailed">
+            <div class="project-icon"><i class="fas fa-bolt fa-3x"></i></div>
+            <div class="project-info">
+                <h3>Smart Grid Monitoring with Anomaly Detection</h3>
+                <p class="project-desc">Developed an IoT system using ESP32 and current sensors to monitor energy consumption in real time. Implemented an autoencoder-based anomaly detection model deployed on AWS IoT Core. Achieved 92% accuracy in identifying irregular consumption patterns.</p>
+                <div class="project-tech">
+                    <span>ESP32</span>
+                    <span>Python</span>
+                    <span>AWS</span>
+                    <span>TensorFlow</span>
+                </div>
+                <a href="#" class="btn-small">GitHub <i class="fab fa-github"></i></a>
+                <a href="#" class="btn-small">Live Demo</a>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card detailed">
+            <div class="project-icon"><i class="fas fa-solar-panel fa-3x"></i></div>
+            <div class="project-info">
+                <h3>Dual-Axis Solar Tracking System</h3>
+                <p>Designed a closed-loop control system with four LDR sensors and two servo motors. The tracker maintains perpendicular alignment to the sun, increasing energy yield by 35% compared to fixed panels. Implemented on Arduino Uno.</p>
+                <div class="project-tech">
+                    <span>Arduino</span>
+                    <span>C++</span>
+                    <span>Servo</span>
+                    <span>Proteus</span>
+                </div>
+                <a href="#" class="btn-small">GitHub</a>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card detailed">
+            <div class="project-icon"><i class="fas fa-robot fa-3x"></i></div>
+            <div class="project-info">
+                <h3>Autonomous Obstacle Avoidance Rover</h3>
+                <p>Built a 4-wheel rover using Raspberry Pi 4, RPLiDAR, and motor drivers. Ran ROS Melodic for navigation and used gmapping for SLAM. Implemented a wall-following algorithm for unknown environments.</p>
+                <div class="project-tech">
+                    <span>Raspberry Pi</span>
+                    <span>ROS</span>
+                    <span>Python</span>
+                    <span>LiDAR</span>
+                </div>
+                <a href="#" class="btn-small">GitHub</a>
+            </div>
+        </div>
+        <!-- Add 3 more projects as described -->
+        <div class="project-card detailed">
+            <div class="project-icon"><i class="fas fa-leaf fa-3x"></i></div>
+            <div class="project-info">
+                <h3>Wireless EV Charging Monitor</h3>
+                <p>Developed a monitoring system for wireless EV charging pads using Hall-effect sensors and Bluetooth module. Data is logged to cloud via NodeMCU for efficiency analysis.</p>
+                <div class="project-tech"><span>NodeMCU</span><span>Bluetooth</span><span>Blynk</span></div>
+            </div>
+        </div>
+        <div class="project-card detailed">
+            <div class="project-icon"><i class="fas fa-wave-square fa-3x"></i></div>
+            <div class="project-info">
+                <h3>FPGA-based Signal Generator</h3>
+                <p>Designed a DDS signal generator on Nexys4 DDR board (Verilog) capable of sine, square, and triangle waves up to 1 MHz.</p>
+                <div class="project-tech"><span>Verilog</span><span>Vivado</span><span>FPGA</span></div>
+            </div>
+        </div>
+        <div class="project-card detailed">
+            <div class="project-icon"><i class="fas fa-home fa-3x"></i></div>
+            <div class="project-info">
+                <h3>Home Automation with Voice Control</h3>
+                <p>Integrated Google Assistant with ESP32 via Adafruit IO to control lights and fans. Implemented local fallback using IR remote.</p>
+                <div class="project-tech"><span>ESP32</span><span>Adafruit IO</span><span>IFTTT</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>...</footer>
+    <button id="back-to-top">...</button>
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
