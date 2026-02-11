@@ -1,54 +1,125 @@
+/* Skills Page Styles */
+
 .skills-hero {
-    padding: 4rem 2rem;
+    position: relative;
+    padding: 6rem 2rem 3rem;
     text-align: center;
 }
 
+.skills-hero h1 {
+    font-size: 3.5rem;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px var(--neon-blue);
+    font-family: var(--font-heading);
+}
+
+.skills-hero p {
+    font-size: 1.2rem;
+    color: var(--neon-green);
+    font-family: var(--font-mono);
+}
+
 .skills-categories {
-    max-width: 1000px;
+    max-width: var(--container-width);
     margin: 0 auto;
     padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
 }
 
 .skill-category {
-    background: var(--bg-card);
-    border: 1px solid var(--neon-blue);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    backdrop-filter: var(--backdrop-blur);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: 0.4s;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-purple);
+    box-shadow: 0 10px 30px rgba(188, 19, 254, 0.15);
 }
 
 .skill-category h2 {
-    color: var(--neon-green);
-    margin-bottom: 1.5rem;
+    color: var(--neon-blue);
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.skill-category h2 i {
+    color: var(--neon-green);
 }
 
 .skill-bar-container {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.5rem;
+}
+
+.skill-item {
+    position: relative;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
 .skill-label {
-    font-size: 1rem;
-    color: var(--text-light);
+    font-family: var(--font-mono);
+    color: var(--text-main);
+    font-size: 0.95rem;
+}
+
+.skill-percent {
+    font-family: var(--font-mono);
+    color: var(--neon-green);
+    font-size: 0.9rem;
 }
 
 .progress-bar {
     width: 100%;
-    height: 12px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 6px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
     overflow: hidden;
-    margin-bottom: 0.5rem;
+    position: relative;
 }
 
 .progress {
-    width: 0%;
     height: 100%;
-    background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
-    border-radius: 6px;
-    transition: width 1s ease-in-out;
+    background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+    border-radius: 4px;
+    width: 0;
+    /* Animated via JS */
+    position: relative;
+    box-shadow: 0 0 10px var(--neon-blue);
+    transition: width 1.5s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: white;
+    box-shadow: 0 0 5px white;
+}
+
+@media (max-width: 768px) {
+    .skills-categories {
+        grid-template-columns: 1fr;
+    }
 }

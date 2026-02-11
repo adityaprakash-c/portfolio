@@ -1,99 +1,128 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Prakash. - Electrical & Computer Eng.</title>
+    <title>Aditya Prakash | Electrical & Computer Engineer</title>
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Sticky Navigation -->
-    <nav class="navbar">
+    <div class="scanlines"></div>
+    <div class="glow-orb" style="top: 10%; left: 10%; background: var(--neon-blue);"></div>
+    <div class="glow-orb" style="bottom: 10%; right: 10%; background: var(--neon-purple);"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">Aditya Prakash.</div>
+            <a href="index.html" class="logo">Aditya<span style="color:var(--neon-green)">.</span></a>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <i class="fas fa-bars" style="color: var(--neon-green); font-size: 1.5rem;"></i>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="circuit-bg"></div>
+        <div class="hero-grid-bg"></div>
         <div class="hero-content">
-            <h1 class="glitch" data-text="Aditya Prakash.">Aditya Prakash.</h1>
-            <p class="subtitle">B.Tech Electrical & Computer Engineering</p>
-            <p class="college">MIT World Peace University, Pune</p>
+            <h1 class="glitch-text" data-text="Aditya Prakash">Aditya Prakash</h1>
+            <p class="hero-subtitle">&lt; Electrical & Computer Engineer /&gt;</p>
+            <p class="hero-college">MIT World Peace University, Pune</p>
+
             <div class="hero-stats">
                 <div class="stat-item">
-                    <span class="stat-number" id="stat-projects">0</span>
+                    <span class="stat-number">0+</span>
                     <span class="stat-label">Projects</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number" id="stat-internships">0</span>
-                    <span class="stat-label">Internships</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" id="stat-hackathons">0</span>
-                    <span class="stat-label">Hackathons</span>
-                </div>
+                <!-- Add more stats dynamically if needed -->
             </div>
-            <a href="projects.html" class="btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+
+            <div style="margin-top: 2rem;">
+                <a href="projects.html" class="btn-cyber">View Work <i class="fas fa-arrow-right"></i></a>
+                <a href="contact.html" class="btn-secondary">Contact Me</a>
+            </div>
         </div>
     </section>
 
     <!-- Featured Projects Preview -->
     <section class="featured">
-        <h2>Featured Projects</h2>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
         <div class="project-grid">
             <div class="project-card">
-                <i class="fas fa-microchip fa-3x"></i>
+                <i class="fas fa-microchip project-icon"></i>
                 <h3>Smart Grid Monitor</h3>
-                <p>IoT-based real-time energy monitoring with anomaly detection.</p>
-                <span class="tech">ESP32, Python, AWS</span>
+                <p>IoT-based real-time energy monitoring with anomaly detection for sustainable power.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">ESP32</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">AWS IoT</span>
+                </div>
             </div>
             <div class="project-card">
-                <i class="fas fa-solar-panel fa-3x"></i>
+                <i class="fas fa-solar-panel project-icon"></i>
                 <h3>Solar Tracking System</h3>
-                <p>Dual-axis tracker with LDR sensors, increases efficiency by 35%.</p>
-                <span class="tech">Arduino, C++, Servo</span>
+                <p>Dual-axis tracker using LDR sensors to increase solar panel efficiency by 35%.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Arduino</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Servo</span>
+                </div>
             </div>
             <div class="project-card">
-                <i class="fas fa-robot fa-3x"></i>
+                <i class="fas fa-robot project-icon"></i>
                 <h3>Autonomous Rover</h3>
-                <p>Obstacle avoidance rover using ROS and LiDAR.</p>
-                <span class="tech">Raspberry Pi, ROS, Python</span>
+                <p>Obstacle avoidance rover utilizing ROS and LiDAR for mapping and navigation.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Raspberry Pi</span>
+                    <span class="tech-tag">ROS</span>
+                    <span class="tech-tag">Python</span>
+                </div>
             </div>
         </div>
-        <a href="projects.html" class="btn-secondary">All Projects â†’</a>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="projects.html" class="btn-secondary">View All Projects <i class="fas fa-code"></i></a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Â© 2025 Aditya Prakash. | Built with <i class="fas fa-bolt" style="color: #00ff88;"></i> at MIT-WPU</p>
+        <p>© 2026 Aditya Prakash | Engineered with <i class="fas fa-bolt" style="color: var(--neon-green);"></i></p>
         <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
 
-    <!-- Back to Top -->
-    <button id="back-to-top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
-
     <script src="js/script.js"></script>
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
+
 </html>

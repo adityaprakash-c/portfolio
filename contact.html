@@ -1,52 +1,152 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Aditya Prakash.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Contact | Aditya Prakash</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
-<body>
-    <nav class="navbar">...</nav>
 
+<body>
+    <div class="scanlines"></div>
+    <div class="glow-orb" style="top: 10%; left: 80%; background: var(--neon-blue);"></div>
+    <div class="glow-orb" style="bottom: 10%; right: 80%; background: var(--neon-purple);"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Aditya<span style="color:var(--neon-green)">.</span></a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars" style="color: var(--neon-green); font-size: 1.5rem;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
     <section class="contact-hero">
-        <div class="circuit-bg"></div>
-        <h1>Get in Touch</h1>
-        <p>I'm open to collaborations, internships, and research opportunities</p>
+        <h1 class="glitch-text" data-text="Get in Touch">Get in Touch</h1>
+        <p>Open for collaborations, internships, and research opportunities.</p>
     </section>
 
+    <!-- Contact Grid -->
     <section class="contact-grid">
+        <!-- Contact Info -->
         <div class="contact-info">
-            <h2>Let's connect</h2>
-            <p><i class="fas fa-envelope"></i> aditya.n@mitwpu.edu.in</p>
-            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-            <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</p>
-            <div class="social-links-large">
-                <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <h2>Let's Connect</h2>
+            <div class="contact-detail">
+                <i class="fas fa-envelope"></i>
+                <span>aditya.prakash@mitwpu.edu.in</span>
+            </div>
+            <div class="contact-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Pune, Maharashtra, India</span>
+            </div>
+            <div class="contact-detail">
+                <i class="fas fa-globe"></i>
+                <span>Available for Remote Work</span>
+            </div>
+
+            <div class="social-connect">
+                <p style="color: var(--neon-green); font-family: var(--font-mono);">Follow my work:</p>
+                <div class="social-buttons">
+                    <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
 
+        <!-- Contact Form -->
         <div class="contact-form">
-            <h2>Send a message</h2>
+            <h2>Send a Signal</h2>
             <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <input type="text" id="subject" placeholder="Subject">
-                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
-                <p id="form-feedback" style="display:none;"></p>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder=" " required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder=" " required>
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder=" " required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn-submit">
+                    Send Transmission <i class="fas fa-satellite-dish"></i>
+                </button>
             </form>
         </div>
     </section>
 
-    <footer>...</footer>
-    <button id="back-to-top">...</button>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Aditya Prakash | Engineered with <i class="fas fa-bolt" style="color: var(--neon-green);"></i></p>
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
-    <script src="js/contact.js"></script>
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Form Submission Animation (Cosmetic)
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = document.querySelector('.btn-submit');
+            const originalText = btn.innerHTML;
+
+            btn.innerHTML = 'Transmitting... <i class="fas fa-spinner fa-spin"></i>';
+            btn.style.opacity = '0.7';
+
+            setTimeout(() => {
+                btn.innerHTML = 'Signal Received! <i class="fas fa-check"></i>';
+                btn.style.borderColor = 'var(--neon-green)';
+                btn.style.color = 'var(--neon-green)';
+                btn.style.background = 'rgba(0, 255, 163, 0.1)';
+
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.opacity = '1';
+                    btn.style.background = 'transparent';
+                    document.getElementById('contactForm').reset();
+                }, 3000);
+            }, 1500);
+        });
+    </script>
 </body>
+
 </html>

@@ -1,100 +1,185 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Aditya Prakash.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Projects | Aditya Prakash</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
-<body>
-    <nav class="navbar">...</nav>
 
+<body>
+    <div class="scanlines"></div>
+    <div class="glow-orb" style="top: -10%; left: 30%; background: var(--neon-blue);"></div>
+    <div class="glow-orb" style="bottom: 10%; right: 10%; background: var(--neon-purple);"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Aditya<span style="color:var(--neon-green)">.</span></a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars" style="color: var(--neon-green); font-size: 1.5rem;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
     <section class="projects-hero">
-        <div class="circuit-bg"></div>
-        <h1>Projects</h1>
-        <p>From concept to deployment â€“ a showcase of my work</p>
+        <h1 class="glitch-text" data-text="Projects">Projects</h1>
+        <p>From concept to deployment – a showcase of innovation.</p>
     </section>
 
+    <!-- Projects Grid -->
     <section class="projects-grid">
         <!-- Project 1 -->
         <div class="project-card detailed">
-            <div class="project-icon"><i class="fas fa-bolt fa-3x"></i></div>
+            <div class="project-icon"><i class="fas fa-bolt"></i></div>
             <div class="project-info">
-                <h3>Smart Grid Monitoring with Anomaly Detection</h3>
-                <p class="project-desc">Developed an IoT system using ESP32 and current sensors to monitor energy consumption in real time. Implemented an autoencoder-based anomaly detection model deployed on AWS IoT Core. Achieved 92% accuracy in identifying irregular consumption patterns.</p>
+                <h3>Smart Grid Monitor</h3>
+                <p class="project-desc">Real-time energy monitoring system using <strong>ESP32</strong> and current
+                    sensors. Implemented an autoencoder-based <strong>anomaly detection model</strong> deployed on
+                    <strong>AWS IoT Core</strong>, achieving 92% accuracy in identifying irregular consumption patterns.
+                </p>
                 <div class="project-tech">
                     <span>ESP32</span>
                     <span>Python</span>
-                    <span>AWS</span>
+                    <span>AWS IoT</span>
                     <span>TensorFlow</span>
+                    <span>MQTT</span>
                 </div>
-                <a href="#" class="btn-small">GitHub <i class="fab fa-github"></i></a>
-                <a href="#" class="btn-small">Live Demo</a>
+                <a href="#" class="btn-small"><i class="fab fa-github"></i> Repository</a>
+                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
         </div>
+
         <!-- Project 2 -->
         <div class="project-card detailed">
-            <div class="project-icon"><i class="fas fa-solar-panel fa-3x"></i></div>
+            <div class="project-icon"><i class="fas fa-solar-panel"></i></div>
             <div class="project-info">
-                <h3>Dual-Axis Solar Tracking System</h3>
-                <p>Designed a closed-loop control system with four LDR sensors and two servo motors. The tracker maintains perpendicular alignment to the sun, increasing energy yield by 35% compared to fixed panels. Implemented on Arduino Uno.</p>
+                <h3>Dual-Axis Solar Tracker</h3>
+                <p class="project-desc">Designed a closed-loop control system with four <strong>LDR sensors</strong> and
+                    two servo motors. The tracker maintains perpendicular alignment to the sun, increasing energy yield
+                    by <strong>35%</strong> compared to fixed panels.</p>
                 <div class="project-tech">
                     <span>Arduino</span>
                     <span>C++</span>
-                    <span>Servo</span>
-                    <span>Proteus</span>
+                    <span>Servo Control</span>
+                    <span>Proteus Simulation</span>
                 </div>
-                <a href="#" class="btn-small">GitHub</a>
+                <a href="#" class="btn-small"><i class="fab fa-github"></i> Repository</a>
             </div>
         </div>
+
         <!-- Project 3 -->
         <div class="project-card detailed">
-            <div class="project-icon"><i class="fas fa-robot fa-3x"></i></div>
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
             <div class="project-info">
-                <h3>Autonomous Obstacle Avoidance Rover</h3>
-                <p>Built a 4-wheel rover using Raspberry Pi 4, RPLiDAR, and motor drivers. Ran ROS Melodic for navigation and used gmapping for SLAM. Implemented a wall-following algorithm for unknown environments.</p>
+                <h3>Autonomous Rover</h3>
+                <p class="project-desc">Built a 4-wheel rover using <strong>Raspberry Pi 4</strong>, RPLiDAR, and motor
+                    drivers. Ran <strong>ROS Melodic</strong> for navigation and used <strong>gmapping for
+                        SLAM</strong>. Implemented a wall-following algorithm for unknown environments.</p>
                 <div class="project-tech">
                     <span>Raspberry Pi</span>
                     <span>ROS</span>
                     <span>Python</span>
                     <span>LiDAR</span>
+                    <span>SLAM</span>
                 </div>
-                <a href="#" class="btn-small">GitHub</a>
+                <a href="#" class="btn-small"><i class="fab fa-github"></i> Repository</a>
             </div>
         </div>
-        <!-- Add 3 more projects as described -->
+
+        <!-- Project 4 -->
         <div class="project-card detailed">
-            <div class="project-icon"><i class="fas fa-leaf fa-3x"></i></div>
+            <div class="project-icon"><i class="fas fa-charging-station"></i></div>
             <div class="project-info">
                 <h3>Wireless EV Charging Monitor</h3>
-                <p>Developed a monitoring system for wireless EV charging pads using Hall-effect sensors and Bluetooth module. Data is logged to cloud via NodeMCU for efficiency analysis.</p>
-                <div class="project-tech"><span>NodeMCU</span><span>Bluetooth</span><span>Blynk</span></div>
+                <p class="project-desc">Developed a monitoring system for wireless EV charging pads using Hall-effect
+                    sensors and Bluetooth. Data is logged to the cloud via <strong>NodeMCU</strong> for efficiency
+                    analysis.</p>
+                <div class="project-tech">
+                    <span>NodeMCU</span>
+                    <span>Bluetooth</span>
+                    <span>Blynk IoT</span>
+                    <span>Hall Sensors</span>
+                </div>
+                <a href="#" class="btn-small"><i class="fab fa-github"></i> Repository</a>
             </div>
         </div>
+
+        <!-- Project 5 -->
         <div class="project-card detailed">
-            <div class="project-icon"><i class="fas fa-wave-square fa-3x"></i></div>
+            <div class="project-icon"><i class="fas fa-wave-square"></i></div>
             <div class="project-info">
-                <h3>FPGA-based Signal Generator</h3>
-                <p>Designed a DDS signal generator on Nexys4 DDR board (Verilog) capable of sine, square, and triangle waves up to 1 MHz.</p>
-                <div class="project-tech"><span>Verilog</span><span>Vivado</span><span>FPGA</span></div>
+                <h3>FPGA Signal Generator</h3>
+                <p class="project-desc">Designed a DDS signal generator on <strong>Nexys4 DDR board</strong> (Verilog)
+                    capable of generating sine, square, and triangle waves up to 1 MHz with high precision.</p>
+                <div class="project-tech">
+                    <span>Verilog</span>
+                    <span>Vivado</span>
+                    <span>FPGA</span>
+                    <span>Digital Logic</span>
+                </div>
+                <a href="#" class="btn-small"><i class="fab fa-github"></i> Repository</a>
             </div>
         </div>
+
+        <!-- Project 6 -->
         <div class="project-card detailed">
-            <div class="project-icon"><i class="fas fa-home fa-3x"></i></div>
+            <div class="project-icon"><i class="fas fa-home"></i></div>
             <div class="project-info">
-                <h3>Home Automation with Voice Control</h3>
-                <p>Integrated Google Assistant with ESP32 via Adafruit IO to control lights and fans. Implemented local fallback using IR remote.</p>
-                <div class="project-tech"><span>ESP32</span><span>Adafruit IO</span><span>IFTTT</span></div>
+                <h3>Voice-Controlled Automation</h3>
+                <p class="project-desc">Integrated <strong>Google Assistant</strong> with ESP32 via Adafruit IO to
+                    control lights and fans. Implemented local fallback using IR remote for offline control.</p>
+                <div class="project-tech">
+                    <span>ESP32</span>
+                    <span>Adafruit IO</span>
+                    <span>IFTTT</span>
+                    <span>Google Assistant</span>
+                </div>
+                <a href="#" class="btn-small"><i class="fab fa-github"></i> Repository</a>
             </div>
         </div>
     </section>
 
-    <footer>...</footer>
-    <button id="back-to-top">...</button>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Aditya Prakash | Engineered with <i class="fas fa-bolt" style="color: var(--neon-green);"></i></p>
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
-    <script src="js/projects.js"></script>
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
+
 </html>
