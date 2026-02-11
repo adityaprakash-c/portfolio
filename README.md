@@ -1,16 +1,16 @@
-# Aditya N. – Electrical & Computer Engineering Portfolio
+﻿# Aditya Prakash. â€“ Electrical & Computer Engineering Portfolio
 
 This is a fully responsive multi-page portfolio website designed for a B.Tech student at MIT-WPU. It highlights academic projects, technical skills, internships, and leadership experience.
 
 ## Features
 - 6 HTML pages with consistent navigation
-- Circuit‑board background and neon accent colors
+- Circuitâ€‘board background and neon accent colors
 - Animated skill progress bars
 - Project showcase with tech tags
 - Education & experience timelines
-- Contact form with front‑end validation
-- Mobile‑friendly hamburger menu
-- Back‑to‑top button
+- Contact form with frontâ€‘end validation
+- Mobileâ€‘friendly hamburger menu
+- Backâ€‘toâ€‘top button
 
 ## How to Use
 1. Clone or download the folder.
